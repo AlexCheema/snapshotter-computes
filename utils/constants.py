@@ -1,6 +1,6 @@
 from web3 import Web3
 
-from ..settings.config import settings as worker_settings
+from settings.config import settings as worker_settings
 from snapshotter.utils.default_logger import logger
 from snapshotter.utils.file_utils import read_json_file
 from snapshotter.utils.rpc import RpcHelper

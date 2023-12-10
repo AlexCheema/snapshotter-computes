@@ -93,6 +93,18 @@ class UniswapTopPairs24hSnapshot(AggregateBase):
     complete: bool = True
 
 
+class UniswapPairGraphSnapshot(BaseModel):
+    name: str
+    address: str
+    liquidity: float
+    volume24h: float
+    fee24h: float
+
+class UniswapPairsGraphSnapshot(AggregateBase):
+    pairs: List[UniswapPairGraphSnapshot] = []
+    complete: bool = True
+
+
 class UniswapTopPair7dSnapshot(BaseModel):
     name: str
     address: str
